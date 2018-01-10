@@ -43,9 +43,9 @@ app.use(flash()); // use connect-flash for flash messages stored in session
 // routes ======================================================================
 require('./app/routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
 
-//facebook.getFbData('EAADZCQIFPhKUBAFylYR3DiyAO6dLmgYZAAZB3FNCViYVfS389XJlPuZAnJlgmZAjnESZBEuWFetGZCUakghydTHkTlhsCB9ST7Bd1vgS0KJ0vPWkFZCsFYeVZC1IZCsfsZAqYgYuEuy2R9SiCGADH9iZC87eGZCSnZCFVp5lUZD', '/me/friends', function(data){
-  //  console.log(data);
-//});
+facebook.getFbData('EAADZCQIFPhKUBAFylYR3DiyAO6dLmgYZAAZB3FNCViYVfS389XJlPuZAnJlgmZAjnESZBEuWFetGZCUakghydTHkTlhsCB9ST7Bd1vgS0KJ0vPWkFZCsFYeVZC1IZCsfsZAqYgYuEuy2R9SiCGADH9iZC87eGZCSnZCFVp5lUZD', '/me/friends', function(data){
+    console.log(data);
+});
 // launch ======================================================================
 app.listen(port);
 console.log('The magic happens on port ' + port);

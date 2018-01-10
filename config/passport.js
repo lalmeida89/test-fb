@@ -207,15 +207,14 @@ module.exports = function(passport) {
 
                     return done(null, user);
                 });
-                facebook.getFbData(token, '/me/friends', function(data){
-                    console.log(data);
-                    console.log('elephant');
-                    console.log(token);
-                });
+
             }
         });
 
-
+        facebook.getFbData(token, '/me/friends', function(data){
+            console.log(data);
+            console.log('elephant');
+        });
 
     }));
 
