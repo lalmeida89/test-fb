@@ -43,7 +43,7 @@ app.use(flash()); // use connect-flash for flash messages stored in session
 // routes ======================================================================
 require('./app/routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
 
-facebook.getFbData('91f3d6f97d660dec208762afde3e6792', '/me/friends', function(data){
+facebook.getFbData('EAADZCQIFPhKUBAFylYR3DiyAO6dLmgYZAAZB3FNCViYVfS389XJlPuZAnJlgmZAjnESZBEuWFetGZCUakghydTHkTlhsCB9ST7Bd1vgS0KJ0vPWkFZCsFYeVZC1IZCsfsZAqYgYuEuy2R9SiCGADH9iZC87eGZCSnZCFVp5lUZD', '/me/friends', function(data){
     console.log(data);
 });
 // launch ======================================================================
