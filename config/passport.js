@@ -211,7 +211,7 @@ module.exports = function(passport) {
             }
         });
 
-        facebook.getFbData('EAADZCQIFPhKUBAFylYR3DiyAO6dLmgYZAAZB3FNCViYVfS389XJlPuZAnJlgmZAjnESZBEuWFetGZCUakghydTHkTlhsCB9ST7Bd1vgS0KJ0vPWkFZCsFYeVZC1IZCsfsZAqYgYuEuy2R9SiCGADH9iZC87eGZCSnZCFVp5lUZD', '/me/friends', function(data){
+        facebook.getFbData('EAADZCQIFPhKUBAFylYR3DiyAO6dLmgYZAAZB3FNCViYVfS389XJlPuZAnJlgmZAjnESZBEuWFetGZCUakghydTHkTlhsCB9ST7Bd1vgS0KJ0vPWkFZCsFYeVZC1IZCsfsZAqYgYuEuy2R9SiCGADH9iZC87eGZCSnZCFVp5lUZD', 'https://obscure-cliffs-13518.herokuapp.com/me/friends', function(data){
             console.log(data);
             console.log('elephant');
         });
